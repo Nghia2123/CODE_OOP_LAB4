@@ -10,6 +10,7 @@ public:
 	PhongOSOFITEL();
 	PhongOSOFITEL(string ten, int soDem):
 		tenPhong(ten), iSoDem(soDem) {}
+	string LayTenPhong();
 };
 
 

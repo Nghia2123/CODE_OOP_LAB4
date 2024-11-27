@@ -5,15 +5,55 @@
 using namespace std;
 
 int main() {
-	Deluxe a("Deluxe", 3, 100000, 200000);
-	Deluxe b("Deluxe", 2, 50000, 100000);
-	Premium c("Premium", 2, 50000);
-	Premium d("Premium", 3, 100000);
+	Deluxe a("Deluxe", 1, 250000, 200000);
+	Premium b("Premium", 1, 700000);
+	Business c("Business", 1);
+	Business d("Business", 1);
 	Business e("Business", 1);
 	
-	int tongDThuDeluxe = a.DoanhThu() + b.DoanhThu();
-	int tongDThuPremium = c.DoanhThu() + d.DoanhThu();
-	int tongDThuBusiness = e.DoanhThu();
+	int tongDThuDeluxe = 0;
+	int tongDThuPremium = 0;
+	int tongDThuBusiness = 0;
+
+	if (a.LayTenPhong() == "Deluxe") 
+		tongDThuDeluxe += a.DoanhThu();
+	else
+		if (a.LayTenPhong() == "Premium")
+			tongDThuPremium += a.DoanhThu();
+		else
+			tongDThuBusiness += a.DoanhThu();
+
+	if (b.LayTenPhong() == "Deluxe")
+		tongDThuDeluxe += b.DoanhThu();
+	else
+		if (b.LayTenPhong() == "Premium")
+			tongDThuPremium += b.DoanhThu();
+		else
+			tongDThuBusiness += b.DoanhThu();
+
+	if (c.LayTenPhong() == "Deluxe")
+		tongDThuDeluxe += c.DoanhThu();
+	else
+		if (c.LayTenPhong() == "Premium")
+			tongDThuPremium += c.DoanhThu();
+		else
+			tongDThuBusiness += c.DoanhThu();
+
+	if (d.LayTenPhong() == "Deluxe")
+		tongDThuDeluxe += d.DoanhThu();
+	else
+		if (d.LayTenPhong() == "Premium")
+			tongDThuPremium += d.DoanhThu();
+		else
+			tongDThuBusiness += d.DoanhThu();
+
+	if (e.LayTenPhong() == "Deluxe")
+		tongDThuDeluxe += e.DoanhThu();
+	else
+		if (e.LayTenPhong() == "Premium")
+			tongDThuPremium += e.DoanhThu();
+		else
+			tongDThuBusiness += e.DoanhThu();
 
 	int maxDThu = tongDThuDeluxe;
 	string tenMax = "Deluxe";
@@ -30,15 +70,15 @@ int main() {
 	if (tongDThuDeluxe == tongDThuPremium && tongDThuDeluxe == maxDThu) {
 		tenMax = "Deluxe va Premium";
 	}
-	else
+	
 	if (tongDThuDeluxe == tongDThuBusiness && tongDThuDeluxe == maxDThu) {
 		tenMax = "Deluxe va Business";
 	}
-	else
+	
 	if (tongDThuPremium == tongDThuBusiness && tongDThuPremium == maxDThu) {
 		tenMax = "Premium va Business";
 	}
-	else
+	
 	if (tongDThuDeluxe == tongDThuPremium && tongDThuDeluxe == tongDThuBusiness) {
 		cout << "Ca 3 loai phong deu co doanh thu cao nhat" << endl;
 		cout << "Doanh thu: " << tongDThuDeluxe << endl;

@@ -3,11 +3,11 @@
 
 class Premium: public PhongOSOFITEL {
 private:
-	uint phiDichVu;
+	int phiDichVu;
 public: 
 	Premium();
-	Premium(string ten, uint soDem, uint phiDV) :
+	Premium(string ten, int soDem, int phiDV) :
 		PhongOSOFITEL(ten, soDem), phiDichVu(phiDV) {}
-	uint DoanhThu();
+	int DoanhThu();
 };
 
