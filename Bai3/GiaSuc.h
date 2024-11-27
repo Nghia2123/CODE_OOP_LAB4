@@ -5,7 +5,7 @@ protected:
 public:
 	GiaSuc();
 	GiaSuc(int sl) : soLuong(sl) {}
-	int laySoLuong();
+	int LaySoLuong();
 	void SinhCon();
 	int ChoSua();
 	void Keu();

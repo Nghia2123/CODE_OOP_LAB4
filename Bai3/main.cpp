@@ -31,9 +31,9 @@ int main() {
 	cuu.SinhCon();
 	de.SinhCon();	
 	cout << "So luong moi loai gia suc sau mot lua sinh la: " << endl;
-	cout << "Bo: " << bo.laySoLuong() << endl;
-	cout << "Cuu: " << cuu.laySoLuong() << endl;
-	cout << "De: " << de.laySoLuong() << endl;
+	cout << "Bo: " << bo.LaySoLuong() << endl;
+	cout << "Cuu: " << cuu.LaySoLuong() << endl;
+	cout << "De: " << de.LaySoLuong() << endl;
 	cout << endl;
 
 

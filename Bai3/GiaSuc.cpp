@@ -7,7 +7,7 @@ GiaSuc::GiaSuc() {
 	soLuong = 0;
 }
 
-int GiaSuc::laySoLuong() {
+int GiaSuc::LaySoLuong() {
 	return soLuong;
 }
 
