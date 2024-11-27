@@ -5,11 +5,11 @@
 using namespace std;
 
 int main() {
-	Deluxe a("Deluxe", 1, 250000, 200000);
-	Premium b("Premium", 1, 700000);
+	Deluxe a("Deluxe", 1, 250000, 500000);
+	Premium b("Premium", 1, 900000);
 	Business c("Business", 1);
 	Business d("Business", 1);
-	Business e("Business", 1);
+	Business e("Business", 3);
 	
 	int tongDThuDeluxe = 0;
 	int tongDThuPremium = 0;
